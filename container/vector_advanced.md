@@ -22,6 +22,27 @@ rend()      //逆向迭代的最后一个元素的下一个位置，返回反向
 
 ```
 find()
+    原型:
+        template <classinputInterator,class T> inline
+            inputInterator find(inputInterator first,inputInterator last,const T& value)
+
 find_if()           //有条件查找
+    原型
+        template <classinputInterator,class T,class Predicate> inline
+            inputInterator find(inputInterator first,inputInterator last,Predicate predicate)
 均返回迭代器类型
+```
+
+4. 插入元素
+```
+insert()
+push_back()
+```
+
+5. 元素删除
+```
+remove()
+pop_back()                  //只能删除最后一个
+erase()                     //删除一个或多个指定元素
+clear()                     //全部删除
 ```
